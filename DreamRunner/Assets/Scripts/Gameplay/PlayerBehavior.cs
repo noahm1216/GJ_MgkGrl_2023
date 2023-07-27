@@ -11,7 +11,7 @@ public class PlayerBehavior : MonoBehaviour
 {
 
     //a variable for direction
-    [SerializeField] private bool facingRight = true;
+    public bool facingRight = true;
     [Range(-1, 1)] private int directionValue = 1;
 
     [SerializeField] private int speedMove = 3; //probably want to accelerate over time
