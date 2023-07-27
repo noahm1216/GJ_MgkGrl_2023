@@ -10,8 +10,10 @@ using UnityEngine;
 public class PlayerVFX : MonoBehaviour
 {
     [SerializeField] private PlayerBehavior scrpt_PlyrBhvr;
+    //vfx realtime
+    [SerializeField] private GameObject scn_Vfx_RunR, scn_Vfx_RunL, scn_Vfx_Jump;
     // vfx prefabs
-    [SerializeField] private GameObject scn_Vfx_RunR, scn_Vfx_RunL, prfb_Vfx_Jump, prfb_Vfx_Dash;
+    [SerializeField] private GameObject prfb_Vfx_Jump, prfb_Vfx_Dash;
     //vfx pools
     List<GameObject> poolVfx_Jump, poolVfx_Dash = new List<GameObject>();
 
@@ -30,10 +32,10 @@ public class PlayerVFX : MonoBehaviour
             print("done");//stop going left
 
         if (Input.GetKeyDown("space"))
-            print("done");//jump
+            SpawnVFXPool(2);//jump
 
         if (Input.GetKeyDown("q"))
-            print("done");//dash
+            SpawnVFXPool(3);//dash
 
     }
 
@@ -48,15 +50,20 @@ public class PlayerVFX : MonoBehaviour
                 //something else
                 break;
             case 2: // jump
-                //something
+                GameObject clnVfx_Jump = Instantiate(prfb_Vfx_Jump);
+                clnVfx_Jump.transform.position = (transform.position - new Vector3(0,0.4f,0));
+                scn_Vfx_Jump.GetComponent<ParticleSystem>().Play();
+                Destroy(clnVfx_Jump, 3);
                 break;
             case 3: // dash
-
+                GameObject clnVfx_Dash = Instantiate(prfb_Vfx_Dash);
+                clnVfx_Dash.transform.position = transform.position;
+                Destroy(clnVfx_Dash, 3);
                 //something
                 if (scrpt_PlyrBhvr.facingRight)
-                    print("90");//90
+                    clnVfx_Dash.transform.Rotate(0, 90, 0);//90
                 else
-                    print("-90");//-90
+                    clnVfx_Dash.transform.Rotate(0, -90, 0);//-90
                 break;
             default:
                 //nothing
