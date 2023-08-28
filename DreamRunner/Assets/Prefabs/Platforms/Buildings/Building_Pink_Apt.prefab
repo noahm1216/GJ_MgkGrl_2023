@@ -448,7 +448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5081543877909299117}
+  - {fileID: 2650985865813497617}
   - {fileID: 2105514331222858062}
   - {fileID: 1638401060510623102}
   - {fileID: 2966796436910543103}
@@ -534,12 +534,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: building_pink_apartments
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bcd9a1a6447097e4fb940526ba4e3ef6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcd9a1a6447097e4fb940526ba4e3ef6, type: 3}
---- !u!4 &5081543877909299117 stripped
+--- !u!4 &2650985865813497617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bcd9a1a6447097e4fb940526ba4e3ef6,
     type: 3}

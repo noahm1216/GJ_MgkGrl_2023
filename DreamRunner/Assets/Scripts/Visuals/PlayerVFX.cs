@@ -26,15 +26,15 @@ public class PlayerVFX : MonoBehaviour
     // a function for checking player inputs **Ideally this would be connected the PlayerBehavior's inputs
     private void PlayerInputs()
     {
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForBackwards))
             print("done");//go left
-        if (Input.GetKeyUp("w"))
+        if (Input.GetKeyUp(scrpt_PlyrBhvr.buttonForBackwards))
             print("done");//stop going left
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForJump))
             SpawnVFXPool(2);//jump
 
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForDash))
             SpawnVFXPool(3);//dash
 
     }
@@ -50,12 +50,14 @@ public class PlayerVFX : MonoBehaviour
                 //something else
                 break;
             case 2: // jump
+                if(scrpt_PlyrBhvr.jumpCount <= 0) { break; }
                 GameObject clnVfx_Jump = Instantiate(prfb_Vfx_Jump);
                 clnVfx_Jump.transform.position = (transform.position - new Vector3(0,0.4f,0));
                 scn_Vfx_Jump.GetComponent<ParticleSystem>().Play();
                 Destroy(clnVfx_Jump, 3);
                 break;
             case 3: // dash
+                if (scrpt_PlyrBhvr.dashCount <= 0) { break; }
                 GameObject clnVfx_Dash = Instantiate(prfb_Vfx_Dash);
                 clnVfx_Dash.transform.position = transform.position;
                 Destroy(clnVfx_Dash, 3);

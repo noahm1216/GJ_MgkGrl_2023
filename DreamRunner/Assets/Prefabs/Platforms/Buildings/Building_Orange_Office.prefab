@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: building_orange_office
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ef27ac5ff2914d1469c5d6eb152ca2e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
