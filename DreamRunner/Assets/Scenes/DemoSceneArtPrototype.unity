@@ -2953,11 +2953,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b1dc0f91b5545498baf25798e3bfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonForJump: space
+  buttonForDash: w
+  buttonForBackwards: q
   facingRight: 1
   speedMove: 4
   speedJump: 250
   speedDash: 200
+  jumpCountMax: 2
+  dashCountMax: 3
   rBody: {fileID: 912674700}
+  jumpCount: 0
+  dashCount: 0
 --- !u!114 &912674706
 MonoBehaviour:
   m_ObjectHideFlags: 0
