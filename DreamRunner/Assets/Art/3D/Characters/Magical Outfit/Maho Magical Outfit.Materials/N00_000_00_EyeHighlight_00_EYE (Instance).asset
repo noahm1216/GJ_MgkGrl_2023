@@ -49,7 +49,7 @@ Material:
     - _CelShadeSoftness: 0.1
     - _Cull: 0
     - _CullMode: 2
-    - _Cutoff: 0.1
+    - _Cutoff: 0.3
     - _DirectLightMultiplier: 1
     - _DstBlend: 0
     - _IndirectLightMultiplier: 0.1
