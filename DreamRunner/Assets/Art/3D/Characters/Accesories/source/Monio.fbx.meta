@@ -3,7 +3,12 @@ guid: da62c72c57b7e9a4397d7d8c6dd081c1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monio
+    second: {fileID: 2100000, guid: d7f378481fe8daf44bb64dbdf355683a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
