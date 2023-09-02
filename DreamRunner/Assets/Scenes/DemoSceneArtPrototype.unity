@@ -2120,6 +2120,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 89301621166115040, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1901240631955240055, guid: ee4392648e29bf946a01eb83737fdaeb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2129,6 +2134,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023879143130724000, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: speedDash
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023879143130724000, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: speedJump
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023879143130724000, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: dashCountMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023879143130724000, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: jumpCountMax
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3221844376870601870, guid: ee4392648e29bf946a01eb83737fdaeb,
         type: 3}
@@ -2149,6 +2174,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -7.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784941591800717433, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Height
+      value: 3.0819376
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784941591800717433, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.2196046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784941591800717433, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.7200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784941591800717433, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784941591800717433, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.010000001
       objectReference: {fileID: 0}
     - target: {fileID: 4047090762540472834, guid: ee4392648e29bf946a01eb83737fdaeb,
         type: 3}
@@ -2213,6 +2263,41 @@ PrefabInstance:
     - target: {fileID: 4047090762540472834, guid: ee4392648e29bf946a01eb83737fdaeb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Inert
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Damping
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_EndLength
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Stiffness
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Elasticity
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172008232392961821, guid: ee4392648e29bf946a01eb83737fdaeb,
+        type: 3}
+      propertyPath: m_Colliders.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7755937452957417436, guid: ee4392648e29bf946a01eb83737fdaeb,
