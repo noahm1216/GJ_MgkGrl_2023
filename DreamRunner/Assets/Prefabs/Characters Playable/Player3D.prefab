@@ -384,15 +384,20 @@ MonoBehaviour:
   buttonForJump: space
   buttonForDash: w
   buttonForBackwards: q
+  buttonForShooting: 0
+  canMove: 1
   facingRight: 1
   speedMove: 3
   speedJump: 500
   speedDash: 400
   jumpCountMax: 2
   dashCountMax: 3
-  rBody: {fileID: 7754575417288205178}
+  isShooting: 1
+  useAnimation: 1
+  animController_Player: {fileID: 7335724418947208577}
   jumpCount: 0
   dashCount: 0
+  rBody: {fileID: 7754575417288205178}
 --- !u!114 &4564089674323454083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,6 +819,12 @@ PrefabInstance:
 --- !u!4 &242851963225485061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3982078269368392768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7335724418947208577 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5948856434530748865, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
     type: 3}
   m_PrefabInstance: {fileID: 3982078269368392768}
   m_PrefabAsset: {fileID: 0}

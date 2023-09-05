@@ -24,6 +24,8 @@ public class PlayerBehavior : MonoBehaviour
     [Space]
     [Header("Platforming \n __________")]
     [Space]
+    [Tooltip("If true, the player character will try to move forward/in a direction")]
+    public bool canMove = true;
     //a variable for direction
     [Tooltip("The direction maho is facing (we don't want to change this manually, we just want to see if it's happening)")]
     public bool facingRight = true;
@@ -50,10 +52,18 @@ public class PlayerBehavior : MonoBehaviour
     [Tooltip("When true, Maho should shoot out some effects")]
     public bool isShooting = true;
 
+    [Tooltip("The prefab gameobject we want to shoot out")]
+    public GameObject shootingObj;
+    [Tooltip("The speed of the object we're shooting")]
+    public float speedOfObj = 1.0f;
+    [Tooltip("How frequently we're shooting objects")]
+    public float speedFiring = 2.0f;
+    
+
 
 
     [Space]
-    [Header("Visuals \n __________")]
+    [Header("Visuals+ \n __________")]
     [Space]
     //a variable for moving
     [Tooltip("When true, Maho should animate properly")]
@@ -119,6 +129,9 @@ public class PlayerBehavior : MonoBehaviour
     //a function for moving
     private void AbilityMove()
     {
+        if (!canMove)
+            return;
+
         transform.Translate((Vector3.right * directionValue) * (speedMove * Time.deltaTime));
     }
 
