@@ -30,11 +30,15 @@ public class PlayerBehavior : MonoBehaviour
     [Tooltip("The direction maho is facing (we don't want to change this manually, we just want to see if it's happening)")]
     public bool facingRight = true;
     [Range(-1, 1)] private int directionValue = 1;
+    [Tooltip("Rigidbody component we want to add force to.")]
+    [SerializeField] private Rigidbody rBody;
 
     [Tooltip("How fast Maho moves normally")]
     [SerializeField] private int speedMove = 3; //probably want to accelerate over time
     [Tooltip("How strong Maho jumps")]
     [SerializeField] private int speedJump = 500;
+    [Tooltip("How strong Maho falls while in air")]
+    [SerializeField] private int speedFall = 500;
     [Tooltip("How powerful Maho's dash is")]
     [SerializeField] private int speedDash = 225;
     [Tooltip("The number of jumps Maho gets (before she needs to land on the ground)")]
@@ -77,8 +81,9 @@ public class PlayerBehavior : MonoBehaviour
     [HideInInspector] public int jumpCount;
     [HideInInspector] public int dashCount;
     private int layerGround; // ground layer mask
+    private bool touchingGround;
 
-    [SerializeField] private Rigidbody rBody;
+    
 
     //-----Animation
 
@@ -88,6 +93,7 @@ public class PlayerBehavior : MonoBehaviour
         jumpCount = jumpCountMax;
         dashCount = dashCountMax;
         layerGround = LayerMask.NameToLayer("Ground");//get ground later
+        touchingGround = true;
 
     }//end of start()
 
@@ -96,6 +102,9 @@ public class PlayerBehavior : MonoBehaviour
         PlayerInputs();
         AbilityMove();
         CheckAnimations();
+
+        if (!touchingGround)
+            AddFallGravity();
 
     }//end of update()
 
@@ -150,17 +159,29 @@ public class PlayerBehavior : MonoBehaviour
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
     }
 
+    private void AddFallGravity()
+    {
+        if (rBody == null) return;
+        rBody.AddForce((Vector3.down * speedFall * Time.deltaTime), ForceMode.Acceleration);
+    }//end of AddFallGravity()
 
-    //collision with objects
+    //-------------------------------------------------COLLISIONS
+
     private void OnCollisionEnter(Collision col)
     {
-
         if (col.gameObject.layer == layerGround)
         {
             jumpCount = jumpCountMax;
             dashCount = dashCountMax;
-        }
-           
+            touchingGround = true;
+        }           
+    }
+
+    //collision exit with objects
+    private void OnCollisionExit(Collision col)
+    {
+        if (col.gameObject.layer == layerGround)
+            touchingGround = false;
     }
 
     //-------------------------------------------------ANIMATIONS
