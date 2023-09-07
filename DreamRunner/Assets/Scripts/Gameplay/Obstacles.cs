@@ -7,16 +7,22 @@ using UnityEngine;
 /// </summary>
 public class Obstacles : MonoBehaviour
 {
+    public enum obstacleType { None, Book, Senpai, Pokki }
+    public obstacleType thisObsType;
+
+    public enum signalType { None, Dash, Bumped, Other }
+    public signalType mySentSignal;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    private void Interacted(GameObject _object, string _action)
+    public void Smashed(signalType _sentSignal) //consider changing to interacted
     {
-
-    }// end of Interacted()
+        print("smashed");
+    }// end of Smashed()
 
 
 }//end of Obstacle Class

@@ -84,6 +84,7 @@ public class PlayerBehavior : MonoBehaviour
     private float lastDashTimeStamp;
     private float dashingTime;
     private int layerGround; // ground layer mask
+    private int layerObstacle; // obstacle layer mask
     private bool touchingGround;
 
     
@@ -98,6 +99,7 @@ public class PlayerBehavior : MonoBehaviour
         dashingTime = 1.0f;
         lastDashTimeStamp = Time.time - dashingTime;
         layerGround = LayerMask.NameToLayer("Ground");//get ground later
+        layerObstacle = LayerMask.NameToLayer("Obstacle");//get obstacle later
         touchingGround = true;
 
     }//end of start()
@@ -185,13 +187,25 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.layer == layerGround)
+        if (col.gameObject.layer == layerGround) // ground
         {
             jumpCount = jumpCountMax;
             dashCount = dashCountMax;
             touchingGround = true;
-        }           
-    }
+        }
+
+        if (col.gameObject.layer == layerObstacle) // obstacle
+        {
+            //if dash and hit obstacle
+            if (isDashing && col.gameObject.GetComponent<Obstacles>() != null)
+            {
+                var myObs = col.gameObject.GetComponent<Obstacles>();
+                myObs.Smashed(myObs.mySentSignal);
+            }
+                
+        }
+
+    }//end of Col-Enter()
 
     //collision exit with objects
     private void OnCollisionExit(Collision col)
