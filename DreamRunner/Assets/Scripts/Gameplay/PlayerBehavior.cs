@@ -187,23 +187,39 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.layer == layerGround) // ground
+        GameObject rootObj = col.gameObject;
+
+        if (col.transform.name == "Collider")
+            rootObj = col.transform.parent.gameObject;
+            
+
+        if (rootObj.layer == layerGround) // ground
         {
             jumpCount = jumpCountMax;
             dashCount = dashCountMax;
             touchingGround = true;
-        }
+        }//end of (col layer == layerGround)
 
-        if (col.gameObject.layer == layerObstacle) // obstacle
+        if (rootObj.layer == layerObstacle) // obstacle
         {
+            print($"Ran into obstacle - {rootObj.transform.name}");
+
             //if dash and hit obstacle
-            if (isDashing && col.gameObject.GetComponent<Obstacles>() != null)
+            if (isDashing && rootObj.GetComponent<Obstacles>() != null)
             {
-                var myObs = col.gameObject.GetComponent<Obstacles>();
-                myObs.Smashed(myObs.mySentSignal);
+                var myObs = rootObj.GetComponent<Obstacles>();
+                myObs.Interacted(this.gameObject, Obstacles.signalType.Dash);
             }
-                
-        }
+
+            //if just touch the obstacle
+            if (rootObj.GetComponent<Obstacles>() != null)
+            {
+                var myObs = rootObj.GetComponent<Obstacles>();
+                myObs.Interacted(this.gameObject, Obstacles.signalType.Bump);
+            }
+            
+
+        }//end of (col layer == layerObstacle)
 
     }//end of Col-Enter()
 
