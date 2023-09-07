@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6907117808896404274}
   - component: {fileID: 4848420416419366936}
   - component: {fileID: 4983558664907233631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,9 +114,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4568604197256997156}
-  m_Layer: 0
+  - component: {fileID: -8548052593227431424}
+  m_Layer: 7
   m_Name: Obstacle_Lovebox_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +139,18 @@ Transform:
   - {fileID: 2313676899939387878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8548052593227431424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700787901637008853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e30c31edc562b4ab55a6ed73c5ae95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2934902121570090409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,6 +218,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lovebox
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1e68bfa343d60745a4a3dcf435edb59,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3382436271755470516, guid: b1e68bfa343d60745a4a3dcf435edb59,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5659987909331386784}
   - component: {fileID: 4688474972665754008}
   - component: {fileID: 622992551078324697}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider_Standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,9 +114,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751518494190802008}
-  m_Layer: 0
+  - component: {fileID: 7429267954606034061}
+  m_Layer: 7
   m_Name: Obstacle_Book_00
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,6 +141,18 @@ Transform:
   - {fileID: 6632738878581957038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7429267954606034061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513639661739591689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e30c31edc562b4ab55a6ed73c5ae95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4445710018428688645
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +165,7 @@ GameObject:
   - component: {fileID: 7420818242153113972}
   - component: {fileID: 9201262141433068771}
   - component: {fileID: 6301238353451724982}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider_Sideways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,6 +343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
         type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -426,6 +444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: book_Standing
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

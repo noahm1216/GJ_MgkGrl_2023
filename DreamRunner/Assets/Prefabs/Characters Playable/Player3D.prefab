@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 4564089674323454083}
   m_Layer: 0
   m_Name: Player3D
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,17 +387,22 @@ MonoBehaviour:
   buttonForShooting: 0
   canMove: 1
   facingRight: 1
+  rBody: {fileID: 7754575417288205178}
   speedMove: 3
   speedJump: 500
+  speedFall: 500
   speedDash: 400
   jumpCountMax: 2
   dashCountMax: 3
   isShooting: 1
+  shootingObj: {fileID: 0}
+  speedOfObj: 1
+  speedFiring: 2
   useAnimation: 1
   animController_Player: {fileID: 7335724418947208577}
   jumpCount: 0
   dashCount: 0
-  rBody: {fileID: 7754575417288205178}
+  isDashing: 0
 --- !u!114 &4564089674323454083
 MonoBehaviour:
   m_ObjectHideFlags: 0

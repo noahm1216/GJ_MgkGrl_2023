@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3168255585914507589}
   - component: {fileID: 2493006097898832272}
   - component: {fileID: 8969755936249250227}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 9194041913926593627}
   - component: {fileID: 7464507809925670647}
   - component: {fileID: 3461790524514067722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,9 +219,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6652421946015893466}
-  m_Layer: 0
+  - component: {fileID: -5040426401925746029}
+  m_Layer: 7
   m_Name: Obstacle_Person_00
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,6 +246,18 @@ Transform:
   - {fileID: 895185657021683131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5040426401925746029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554969683103522971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e30c31edc562b4ab55a6ed73c5ae95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7752166071572962587
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +270,7 @@ GameObject:
   - component: {fileID: 8382853000915530295}
   - component: {fileID: 3843056340744912125}
   - component: {fileID: 3631061677162951082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,11 +436,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6861856051936259373, guid: e48af38195da06f45bd40a3702cc00c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -3449434176112948816, guid: e48af38195da06f45bd40a3702cc00c3,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 16b34de74c0e9f649b0726550ccb0b87, type: 2}
+    - target: {fileID: -1991025686801041644, guid: e48af38195da06f45bd40a3702cc00c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -1991025686801041644, guid: e48af38195da06f45bd40a3702cc00c3,
         type: 3}
       propertyPath: m_IsActive
@@ -437,6 +460,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kanye
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e48af38195da06f45bd40a3702cc00c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672208946950791507, guid: e48af38195da06f45bd40a3702cc00c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509868637778456239, guid: e48af38195da06f45bd40a3702cc00c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

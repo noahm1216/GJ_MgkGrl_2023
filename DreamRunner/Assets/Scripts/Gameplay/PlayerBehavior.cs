@@ -80,6 +80,9 @@ public class PlayerBehavior : MonoBehaviour
     //-----Abilities
     [HideInInspector] public int jumpCount;
     [HideInInspector] public int dashCount;
+    [HideInInspector] public bool isDashing;
+    private float lastDashTimeStamp;
+    private float dashingTime;
     private int layerGround; // ground layer mask
     private bool touchingGround;
 
@@ -92,6 +95,8 @@ public class PlayerBehavior : MonoBehaviour
     {
         jumpCount = jumpCountMax;
         dashCount = dashCountMax;
+        dashingTime = 1.0f;
+        lastDashTimeStamp = Time.time - dashingTime;
         layerGround = LayerMask.NameToLayer("Ground");//get ground later
         touchingGround = true;
 
@@ -102,6 +107,7 @@ public class PlayerBehavior : MonoBehaviour
         PlayerInputs();
         AbilityMove();
         CheckAnimations();
+        CheckDashing();
 
         if (!touchingGround)
             AddFallGravity();
@@ -156,6 +162,7 @@ public class PlayerBehavior : MonoBehaviour
     private void AbilityDash()
     {
         if (dashCount <= 0) return;
+        lastDashTimeStamp = Time.time;
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
     }
 
@@ -164,6 +171,15 @@ public class PlayerBehavior : MonoBehaviour
         if (rBody == null) return;
         rBody.AddForce((Vector3.down * speedFall * Time.deltaTime), ForceMode.Acceleration);
     }//end of AddFallGravity()
+
+
+    private void CheckDashing()
+    {
+        if (Time.time < lastDashTimeStamp + dashingTime)
+            isDashing = true;
+        else
+            isDashing = false;
+    }//end of CheckDashing()
 
     //-------------------------------------------------COLLISIONS
 
