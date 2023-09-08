@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1129099674960468111}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.67, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -311,7 +311,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.25, y: 1.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4765619, y: 1.4765619, z: 1.4765619}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1901240631955240055}
@@ -338,10 +338,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1.2196046
+  m_Height: 3.0819376
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.7200001, y: 0.52, z: -0.010000001}
 --- !u!54 &7754575417288205178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -390,9 +390,9 @@ MonoBehaviour:
   facingRight: 1
   rBody: {fileID: 7754575417288205178}
   speedMove: 3
-  speedJump: 750
+  speedJump: 250
   speedFall: -100
-  speedDash: 400
+  speedDash: 300
   jumpCountMax: 3
   dashCountMax: 3
   isShooting: 1
@@ -422,7 +422,7 @@ MonoBehaviour:
   scn_Vfx_Jump: {fileID: 1734047410609818811}
   prfb_Vfx_Jump: {fileID: 7734578518747246255, guid: b5e2d1ae59b911c47b68e4e5b00e6029,
     type: 3}
-  prfb_Vfx_Dash: {fileID: 6131526842517710848, guid: bf73cddd11acf5e42a0615c6e8f9c204,
+  prfb_Vfx_Dash: {fileID: 821016546257535322, guid: 8071620a9f9008e44ae36de1175f66af,
     type: 3}
 --- !u!1 &4860713596094053721
 GameObject:
@@ -449,7 +449,7 @@ Transform:
   m_GameObject: {fileID: 4860713596094053721}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.67, y: -0.020000003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -485,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 5415059830722696407}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2800002, y: -0.25, z: -10}
+  m_LocalPosition: {x: 3.67, y: -0.11, z: -6.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -812,10 +812,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3926695013399418016, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5351573376158487097, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
         type: 3}
       propertyPath: m_Name
       value: Maho Magical Outfit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
+        type: 3}
+      propertyPath: m_Damping
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
+        type: 3}
+      propertyPath: m_Stiffness
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
+        type: 3}
+      propertyPath: m_Elasticity
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
