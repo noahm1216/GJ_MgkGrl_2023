@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b1dc0f91b5545498baf25798e3bfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showDebug: 0
   buttonForJump: space
   buttonForDash: w
   buttonForBackwards: q
@@ -390,7 +391,7 @@ MonoBehaviour:
   rBody: {fileID: 7754575417288205178}
   speedMove: 3
   speedJump: 750
-  speedFall: 500
+  speedFall: -100
   speedDash: 400
   jumpCountMax: 3
   dashCountMax: 3

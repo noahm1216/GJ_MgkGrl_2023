@@ -10,6 +10,12 @@ using UnityEngine.Animations;
 /// </summary>
 public class PlayerBehavior : MonoBehaviour
 {
+    
+    [Tooltip("click/set to true to print out all logs")]
+    [SerializeField] private bool showDebug = false;
+    [Space]
+    [Space]
+
     [Header("HotKeys \n __________")]
     [Space]
     [Tooltip("The button we press to make Maho jump up (can be any letter or number on a normal keyboard)")]
@@ -87,7 +93,7 @@ public class PlayerBehavior : MonoBehaviour
     private int layerObstacle; // obstacle layer mask
     private bool touchingGround;
 
-    
+
 
     //-----Animation
 
@@ -135,7 +141,8 @@ public class PlayerBehavior : MonoBehaviour
     // a fucntion to update direction as needed
     public void UpdateDirection(bool _reverseDir)
     {
-        print($"going right {_reverseDir}");
+        if (showDebug)
+            print($"going right {_reverseDir}");
         facingRight = _reverseDir;
         if (facingRight)
             directionValue = 1;
@@ -202,7 +209,8 @@ public class PlayerBehavior : MonoBehaviour
 
         if (rootObj.layer == layerObstacle) // obstacle
         {
-            print($"Ran into obstacle - {rootObj.transform.name}");
+            if (showDebug)
+                print($"Ran into obstacle - {rootObj.transform.name}");
 
             //if dash and hit obstacle
             if (isDashing && rootObj.GetComponent<Obstacles>() != null)

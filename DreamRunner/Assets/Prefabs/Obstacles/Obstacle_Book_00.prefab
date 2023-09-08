@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5659987909331386784}
   - component: {fileID: 4688474972665754008}
   - component: {fileID: 622992551078324697}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Collider_Standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751518494190802008}
   - component: {fileID: 7429267954606034061}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Obstacle_Book_00
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 7420818242153113972}
   - component: {fileID: 9201262141433068771}
   - component: {fileID: 6301238353451724982}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Collider_Sideways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
         type: 3}
@@ -450,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1d731fcb1618e5642bf62981b58ff4e6,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
