@@ -173,6 +173,7 @@ public class PlayerBehavior : MonoBehaviour
         if (dashCount <= 0) return;
         lastDashTimeStamp = Time.time;
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
+        dashCount--;
     }
 
     private void AddFallGravity()
