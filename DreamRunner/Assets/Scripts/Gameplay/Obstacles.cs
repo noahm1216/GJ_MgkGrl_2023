@@ -26,6 +26,15 @@ public class Obstacles : MonoBehaviour
     public int bounceHeight = 1000;
 
 
+
+    [Space]
+    [Header("Senpai \n __________")]
+    [Space]
+    //a variable for bouncing
+    [Tooltip("When Maho dashes into this obstacle it will play the VFX gameobject below")]
+    [SerializeField] private GameObject vfxBreak;
+
+
     void Start()
     {
 

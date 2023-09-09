@@ -97,6 +97,11 @@ public class PlayerBehavior : MonoBehaviour
 
     //-----Animation
 
+    private bool isRunningBackwards;
+    private bool isFalling;
+    private float dashTriggerTimer, jumpTriggerTimer;
+    private float dashTime, jumpTime = 0.15f;
+
 
     private void Start()
     {
@@ -166,7 +171,14 @@ public class PlayerBehavior : MonoBehaviour
             return;
         rBody.AddForce(Vector3.up * speedJump);
         jumpCount--;
-    }
+
+        //************************this is not optimized but for now will work
+        //if missing refs then stop
+        if (!useAnimation || !animController_Player)
+            return;
+        animController_Player.SetTrigger("Jumped");
+        jumpTriggerTimer = Time.time;
+    }//end of AbilityJump()
 
     // a function for dash
     private void AbilityDash()
@@ -176,7 +188,14 @@ public class PlayerBehavior : MonoBehaviour
         lastDashTimeStamp = Time.time;
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
         dashCount--;
-    }
+
+        //************************this is not optimized but for now will work
+        //if missing refs then stop
+        if (!useAnimation || !animController_Player)
+            return;
+        animController_Player.SetTrigger("Dashed");
+        dashTriggerTimer = Time.time;
+    }//end of AbilityDash()
 
     private void AddFallGravity()
     {
@@ -208,7 +227,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             jumpCount = jumpCountMax;
             dashCount = dashCountMax;
-            touchingGround = true;
+            touchingGround = true;            
         }//end of (col layer == layerGround)
 
         if (rootObj.layer == layerObstacle) // obstacle
@@ -250,8 +269,18 @@ public class PlayerBehavior : MonoBehaviour
         if (!useAnimation || !animController_Player)
             return;
 
+        isFalling = !touchingGround;
 
 
-    }
+        animController_Player.SetBool("canMove", canMove);
+        animController_Player.SetBool("isRunningBackwards", !facingRight);
+        animController_Player.SetBool("isFalling", isFalling);
+
+        if (Time.time > dashTriggerTimer + dashTime)
+            animController_Player.ResetTrigger("Dashed");
+
+        if (Time.time > jumpTriggerTimer + jumpTime)
+            animController_Player.ResetTrigger("Jumped");
+    }//end of CheckAnimations()
 
 }//end of player behavior script
