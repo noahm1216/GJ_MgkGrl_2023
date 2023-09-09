@@ -162,7 +162,8 @@ public class PlayerBehavior : MonoBehaviour
     // a function for the jump
     private void AbilityJump()
     {
-        if (rBody == null || jumpCount <=0) return;
+        if (rBody == null || jumpCount <=0)
+            return;
         rBody.AddForce(Vector3.up * speedJump);
         jumpCount--;
     }
@@ -170,7 +171,8 @@ public class PlayerBehavior : MonoBehaviour
     // a function for dash
     private void AbilityDash()
     {
-        if (dashCount <= 0) return;
+        if (dashCount <= 0)
+            return;
         lastDashTimeStamp = Time.time;
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
         dashCount--;
@@ -178,7 +180,8 @@ public class PlayerBehavior : MonoBehaviour
 
     private void AddFallGravity()
     {
-        if (rBody == null) return;
+        if (rBody == null)
+            return;
         rBody.AddForce((Vector3.down * speedFall * Time.deltaTime), ForceMode.Acceleration);
     }//end of AddFallGravity()
 
