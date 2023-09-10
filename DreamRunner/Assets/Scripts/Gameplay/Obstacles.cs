@@ -14,7 +14,6 @@ public class Obstacles : MonoBehaviour
     [Space]
     public obstacleType thisObsType;
 
-
     public enum signalType { None, Dash, Bump, Jump }
 
 
@@ -65,6 +64,41 @@ public class Obstacles : MonoBehaviour
         print($"{thisObsType} was smashed");
 
 
+        switch (thisObsType)
+        {
+            case obstacleType.Book:
+                print("Smashed() - Book");
+                break;
+            case obstacleType.Senpai:
+                print("Smashed() - Senpai");
+                foreach (Transform child in transform)
+                    child.gameObject.SetActive(false);
+                GameObject deathVfx = Instantiate(vfxBreak);
+                deathVfx.transform.position = transform.position + new Vector3(0,1,0);
+                deathVfx.SetActive(true);
+                deathVfx.transform.SetParent(transform);
+                break;
+            case obstacleType.Pokki:
+                print("Smashed() - Pokki");
+                break;
+            case obstacleType.LoveBox:
+                print("Smashed() - LoveBox");
+                //bounce the _interactor
+                int dir = 1;
+                if (_interactor.transform.position.x < transform.position.x)
+                    dir = -1;
+                if (_interactor.transform.GetComponent<Rigidbody>() != null && _interactor.transform.position.y > transform.position.y + (transform.localScale.y * 2))
+                    _interactor.transform.GetComponent<Rigidbody>().AddForce(Vector3.right * bounceHeight * dir);
+                //jump reaction
+                if (_interactor.transform.GetComponent<PlayerBehavior>() != null)
+                    _interactor.transform.GetComponent<PlayerBehavior>().ObstacleAnimationCall("Jumped");
+                break;
+            default:
+                print($"{thisObsType} not accounted for yet");
+                break;
+        }
+
+
     }//end of Smashed()
 
     //for when the player simply bumps up against or touches an obstacle
@@ -87,14 +121,18 @@ public class Obstacles : MonoBehaviour
             case obstacleType.LoveBox:
                 print("Touched() - LoveBox");
                 //bounce the _interactor
-                if (_interactor.transform.GetComponent<Rigidbody>() != null && 
-                    _interactor.transform.position.y > transform.position.y + (transform.localScale.y*2)) { _interactor.transform.GetComponent<Rigidbody>().AddForce(Vector3.up * bounceHeight); }
+                if (_interactor.transform.GetComponent<Rigidbody>() != null && _interactor.transform.position.y > transform.position.y + (transform.localScale.y * 2))
+                    _interactor.transform.GetComponent<Rigidbody>().AddForce(Vector3.up * bounceHeight);
+                //jump reaction
+                if (_interactor.transform.GetComponent<PlayerBehavior>() != null)
+                    _interactor.transform.GetComponent<PlayerBehavior>().ObstacleAnimationCall("Jumped");
                 break;
             default:
                 print($"{thisObsType} not accounted for yet");
                 break;
         }
     }//end of Touched()
+
 
 
 }//end of Obstacle Class

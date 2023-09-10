@@ -100,7 +100,7 @@ public class PlayerBehavior : MonoBehaviour
     private bool isRunningBackwards;
     private bool isFalling;
     private float dashTriggerTimer, jumpTriggerTimer;
-    private float dashTime, jumpTime = 0.15f;
+    private float dashTime, jumpTime = 0.05f;
 
 
     private void Start()
@@ -270,7 +270,26 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (trig.gameObject.layer == layerGround || trig.gameObject.layer == layerObstacle)
             touchingGround = true;
-    }
+
+        GameObject rootObj = trig.gameObject;
+
+        if (trig.transform.name == "Collider")
+            rootObj = trig.transform.parent.gameObject;
+
+        if (rootObj.layer == layerObstacle) // obstacle
+        {
+            if (showDebug)
+                print($"Trig-Staying with obstacle - {rootObj.transform.name}");
+
+            //if dash and hit obstacle
+            if (isDashing && rootObj.GetComponent<Obstacles>() != null)
+            {
+                var myObs = rootObj.GetComponent<Obstacles>();
+                myObs.Interacted(this.gameObject, Obstacles.signalType.Dash);
+            }
+
+        }
+    }//end of trigstay()
 
 
     //-------------------------------------------------ANIMATIONS

@@ -261,6 +261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisObsType: 2
   bounceHeight: 1000
+  vfxBreak: {fileID: 2817813146465231806, guid: a9005baa15fff8e4899cbdba1a7306f5,
+    type: 3}
 --- !u!1 &7752166071572962587
 GameObject:
   m_ObjectHideFlags: 0

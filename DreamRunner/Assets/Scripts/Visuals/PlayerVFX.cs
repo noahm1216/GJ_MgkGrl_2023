@@ -27,9 +27,9 @@ public class PlayerVFX : MonoBehaviour
     private void PlayerInputs()
     {
         if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForBackwards))
-            print("done");//go left
+            print("backwards missing VFX");//go left
         if (Input.GetKeyUp(scrpt_PlyrBhvr.buttonForBackwards))
-            print("done");//stop going left
+            print("forwards missing vfx");//stop going left
 
         if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForJump))
             SpawnVFXPool(2);//jump
