@@ -235,6 +235,10 @@ public class PlayerBehavior : MonoBehaviour
             if (showDebug)
                 print($"Ran into obstacle - {rootObj.transform.name}");
 
+            jumpCount = jumpCountMax;
+            dashCount = dashCountMax;
+            touchingGround = true;
+
             //if dash and hit obstacle
             if (isDashing && rootObj.GetComponent<Obstacles>() != null)
             {
@@ -257,9 +261,17 @@ public class PlayerBehavior : MonoBehaviour
     //collision exit with objects
     private void OnCollisionExit(Collision col)
     {
-        if (col.gameObject.layer == layerGround)
+        if (col.gameObject.layer == layerGround || col.gameObject.layer == layerObstacle)
             touchingGround = false;
     }
+
+    //trigger stay for constant checks
+    private void OnTriggerStay(Collider trig)
+    {
+        if (trig.gameObject.layer == layerGround || trig.gameObject.layer == layerObstacle)
+            touchingGround = true;
+    }
+
 
     //-------------------------------------------------ANIMATIONS
 
@@ -282,5 +294,17 @@ public class PlayerBehavior : MonoBehaviour
         if (Time.time > jumpTriggerTimer + jumpTime)
             animController_Player.ResetTrigger("Jumped");
     }//end of CheckAnimations()
+
+
+    //an unoptimized function to let obstacle and objects call an animation on Maho
+    public void ObstacleAnimationCall(string _animName)
+    {
+        if(_animName == "Jumped")
+        {
+            animController_Player.ResetTrigger("Jumped");
+            animController_Player.SetTrigger("Jumped");
+        }
+
+    }// end of ObstacleAnimationCall()
 
 }//end of player behavior script
