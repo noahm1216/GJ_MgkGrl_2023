@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: 74145c5999bfa0f4ebc8b8ff7ca2e793
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9943
+        width: 1958
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057e4bbfae1c99f40a1f38b7b901d989
+      internalID: 1291115377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 4009
+        y: 9939
+        width: 2000
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732c9b1bba0c1f84d834210390cc5d48
+      internalID: -1195686784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 8072
+        y: 9960
+        width: 1983
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c89b664656c154494f32072a617ef6
+      internalID: 1635029086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9520
+        width: 2001
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f32671179f625b448d93130f72225e5
+      internalID: 632629090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 9517
+        width: 1995
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ab1985d3917be4d8a14cc2851de97f
+      internalID: -883992233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 9521
+        width: 1987
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3f6fd1bd96e564f95e1bb1cb4ebfe7
+      internalID: -409824932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 9095
+        width: 1949
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085cb0f9717dc944ebeb25b537d4c919
+      internalID: -553593246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 4051
+        y: 9127
+        width: 1968
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee32237f887c3744cb54629b5c1c4f73
+      internalID: -124344137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 8094
+        y: 9108
+        width: 1955
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b4542b2c850ca43ae54c9c5841d08d
+      internalID: 1852122109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 8665
+        width: 1986
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02da17faea66ed746861dd7bf794e615
+      internalID: 1276591119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 4038
+        y: 8665
+        width: 1968
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e633a59b3b2d537408a7bda394abee09
+      internalID: -524147548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 8056
+        y: 8658
+        width: 1999
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc674c90abed5484cb5cf084b45afbf1
+      internalID: -1133271730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 8241
+        width: 1962
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847bf0f092643184da3ba532193fd2bd
+      internalID: 1890779313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 4057
+        y: 8241
+        width: 1930
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108a83c8b24f1054f9cab974e4cfa93e
+      internalID: 1703055347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 8094
+        y: 8234
+        width: 1955
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a2e4855fc07314fa16b9cf2cb38981
+      internalID: 1037687880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7811
+        width: 1999
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623e4809227eab849bb7c0f62a07d8dc
+      internalID: 1015345283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 4051
+        y: 7804
+        width: 2012
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904445b320810e5439c92f0a68c7eaf8
+      internalID: 1405361982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 8075
+        y: 7811
+        width: 1987
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4ef61e3c9fb634e9e16ea1554c587b
+      internalID: 2017812370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 7373
+        width: 1941
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17a63b8f39872647aa84dbd9ed52baf
+      internalID: -392952001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 7388
+        width: 1956
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacf05dda12c84b469081d6ea25be729
+      internalID: -1746933753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 8077
+        y: 7380
+        width: 1971
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b902a71e34c57a149aa0478d7de4f915
+      internalID: -1915120554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6930
+        width: 1964
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079b16682276d484383e4df5a7b735e0
+      internalID: -1055415761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 4027
+        y: 6960
+        width: 1987
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafead856baa7644595498c221aafbf6
+      internalID: 1367813305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 8077
+        y: 6953
+        width: 1948
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f052318bff83ab549b4e1b7d8945037d
+      internalID: -661849687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6525
+        width: 1987
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f119906bb2dd71d4793a0a238500aa6a
+      internalID: 2128903131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 6509
+        width: 1948
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485ff1846abccda47b05ca54b2a5ca57
+      internalID: -1276666094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 8054
+        y: 6509
+        width: 2001
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98de69bfd5040304fa7b1e8991951173
+      internalID: 1791024098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6074
+        width: 1987
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae926b0aa2ef3d4698ff1642b31cba9
+      internalID: 37847200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 4035
+        y: 6089
+        width: 1979
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74983311c556c24ea508e723675d2cc
+      internalID: -591281224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 8084
+        y: 6089
+        width: 1918
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d037bab03ef9745a41ade1382ae13c
+      internalID: -844648419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5654
+        width: 1971
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7550389e059ba04ea936fa454550afc
+      internalID: 944528107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 4073
+        y: 5631
+        width: 1971
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bafeb53d0eaf0a4db67cf7e3d82eebe
+      internalID: 159617530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 8061
+        y: 5669
+        width: 1964
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42db45891b934a04d9c687708417ca24
+      internalID: 1849501508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5203
+        width: 1986
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66faa96dbd89d8740905fc3d3f6634ab
+      internalID: 526811294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 4065
+        y: 5203
+        width: 1933
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec2c43f6bec36d4e9d858e7703045a7
+      internalID: -2122224107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maho Shojo Banner_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 8099
+        y: 5195
+        width: 1933
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e706be74bafe74db289a5e0ac80de2
+      internalID: 538681720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fb6294336e54a50429a3c43ea6488ec0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Maho Shojo Banner_spritesheet_0: 1291115377
+      Maho Shojo Banner_spritesheet_1: -1195686784
+      Maho Shojo Banner_spritesheet_10: -524147548
+      Maho Shojo Banner_spritesheet_11: -1133271730
+      Maho Shojo Banner_spritesheet_12: 1890779313
+      Maho Shojo Banner_spritesheet_13: 1703055347
+      Maho Shojo Banner_spritesheet_14: 1037687880
+      Maho Shojo Banner_spritesheet_15: 1015345283
+      Maho Shojo Banner_spritesheet_16: 1405361982
+      Maho Shojo Banner_spritesheet_17: 2017812370
+      Maho Shojo Banner_spritesheet_18: -392952001
+      Maho Shojo Banner_spritesheet_19: 1260278381
+      Maho Shojo Banner_spritesheet_2: 1635029086
+      Maho Shojo Banner_spritesheet_20: -1746933753
+      Maho Shojo Banner_spritesheet_21: -1915120554
+      Maho Shojo Banner_spritesheet_22: -1055415761
+      Maho Shojo Banner_spritesheet_23: 1367813305
+      Maho Shojo Banner_spritesheet_24: -661849687
+      Maho Shojo Banner_spritesheet_25: 2128903131
+      Maho Shojo Banner_spritesheet_26: -1276666094
+      Maho Shojo Banner_spritesheet_27: 1791024098
+      Maho Shojo Banner_spritesheet_28: 37847200
+      Maho Shojo Banner_spritesheet_29: -591281224
+      Maho Shojo Banner_spritesheet_3: 632629090
+      Maho Shojo Banner_spritesheet_30: -844648419
+      Maho Shojo Banner_spritesheet_31: 944528107
+      Maho Shojo Banner_spritesheet_32: 159617530
+      Maho Shojo Banner_spritesheet_33: 1849501508
+      Maho Shojo Banner_spritesheet_34: 526811294
+      Maho Shojo Banner_spritesheet_35: -2122224107
+      Maho Shojo Banner_spritesheet_4: -883992233
+      Maho Shojo Banner_spritesheet_5: -409824932
+      Maho Shojo Banner_spritesheet_6: -553593246
+      Maho Shojo Banner_spritesheet_7: -124344137
+      Maho Shojo Banner_spritesheet_8: 1852122109
+      Maho Shojo Banner_spritesheet_9: 1276591119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
