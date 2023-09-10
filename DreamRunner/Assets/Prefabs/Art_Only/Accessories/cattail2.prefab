@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cattail2
       objectReference: {fileID: 0}
+    - target: {fileID: 6492393404965184791, guid: aac5bf9bb6506954ab6e30a742281c3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -138,21 +143,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Root: {fileID: 1368435389305402777}
   m_UpdateRate: 60
-  m_Damping: 0.1
+  m_Damping: 0.05
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Elasticity: 0.1
+  m_Elasticity: 0.025
   m_ElasticityDistrib:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.1
+  m_Stiffness: 0.75
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
