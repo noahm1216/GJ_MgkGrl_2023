@@ -744,21 +744,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -807,35 +792,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3755412220038542149, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926695013399418016, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5351573376158487097, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
         type: 3}
       propertyPath: m_Name
       value: Maho Magical Outfit
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_Damping
-      value: 0.025
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_Stiffness
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108032952932037469, guid: 5a04c4981fdf5ab41a50cbef7ff418e0,
-        type: 3}
-      propertyPath: m_Elasticity
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

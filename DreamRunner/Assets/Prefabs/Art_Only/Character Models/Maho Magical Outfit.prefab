@@ -4123,8 +4123,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.229, y: 0.004, z: 39.316}
-  m_LocalScale: {x: 1.7550572, y: 1.7550572, z: 1.7550572}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1263574692817036934}
   - {fileID: 4634226171641162510}
@@ -8719,6 +8719,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cattail2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542610088779751261, guid: 3bce6bf56d822e241a2f5c0a4fe80c37,
+        type: 3}
+      propertyPath: m_Damping
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542610088779751261, guid: 3bce6bf56d822e241a2f5c0a4fe80c37,
+        type: 3}
+      propertyPath: m_Stiffness
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542610088779751261, guid: 3bce6bf56d822e241a2f5c0a4fe80c37,
+        type: 3}
+      propertyPath: m_Elasticity
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786943446977231008, guid: 3bce6bf56d822e241a2f5c0a4fe80c37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
