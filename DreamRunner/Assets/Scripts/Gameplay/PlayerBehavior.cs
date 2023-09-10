@@ -292,6 +292,14 @@ public class PlayerBehavior : MonoBehaviour
     }//end of trigstay()
 
 
+    //collision exit with objects
+    private void OnTriggerExit(Collider trig)
+    {
+        if (trig.gameObject.layer == layerGround || trig.gameObject.layer == layerObstacle)
+            touchingGround = false;
+    }//end of trigexit()
+
+
     //-------------------------------------------------ANIMATIONS
 
     private void CheckAnimations()
