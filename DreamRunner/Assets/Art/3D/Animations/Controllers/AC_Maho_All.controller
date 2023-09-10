@@ -52,28 +52,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-8200721969576156768
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -4048885547506504684}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &-7958222677375130405
 AnimatorState:
   serializedVersion: 6
@@ -101,28 +79,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-7921552857250520013
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -8911118590817522351}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-6858298068223404610
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -755,7 +711,7 @@ AnimatorStateMachine:
     m_Position: {x: -220, y: -330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6834245487822637033}
-    m_Position: {x: 1010, y: 320, z: 0}
+    m_Position: {x: -380, y: -370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5976572172032206376}
     m_Position: {x: 740, y: 10, z: 0}
@@ -764,8 +720,6 @@ AnimatorStateMachine:
     m_Position: {x: 220, y: -450, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
-  - {fileID: -7921552857250520013}
-  - {fileID: -8200721969576156768}
   - {fileID: 1960991046590699761}
   - {fileID: 654239236558056699}
   - {fileID: 8368736377048677552}
