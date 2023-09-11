@@ -12038,15 +12038,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle_EndGame_00
       objectReference: {fileID: 0}
+    - target: {fileID: 3149157367600891252, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.752881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15.752881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15.752881
+      objectReference: {fileID: 0}
     - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 703
+      value: 703.03
       objectReference: {fileID: 0}
     - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9
+      value: -13.131
       objectReference: {fileID: 0}
     - target: {fileID: 3685819668543911364, guid: d33a9548055f12b4380c7819c25fe312,
         type: 3}
@@ -12087,6 +12107,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744935138947525766, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744935138947525766, guid: d33a9548055f12b4380c7819c25fe312,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28055,6 +28085,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -634.21
       objectReference: {fileID: 0}
+    - target: {fileID: 4518895656366118209, guid: da1dc48eceaf78749936326612af42a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4567328774959629727, guid: da1dc48eceaf78749936326612af42a4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -28089,6 +28124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullTransparentMesh
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730979545135401663, guid: da1dc48eceaf78749936326612af42a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7012748513873269568, guid: da1dc48eceaf78749936326612af42a4,
         type: 3}
