@@ -28,6 +28,7 @@ public class PlayerCamera : MonoBehaviour
             cameraMain = Camera.main;
 
         LerpCamera(camRight.localPosition);
+        lastCamSent = camRight;
     }
 
     // Update is called once per frame
@@ -86,7 +87,11 @@ public class PlayerCamera : MonoBehaviour
         if (distanceToTarget <= distanceTolerance)
             return;
         else
-            LerpCamera(lastCamSent.localPosition);
+        {
+            if (lastCamSent)
+                LerpCamera(lastCamSent.localPosition);
+        }
+            
 
 
     }
