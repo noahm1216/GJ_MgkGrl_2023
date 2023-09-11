@@ -2611,41 +2611,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 503520542193450776, guid: da1dc48eceaf78749936326612af42a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.62000036
-      objectReference: {fileID: 0}
     - target: {fileID: 593935153942744577, guid: da1dc48eceaf78749936326612af42a4,
         type: 3}
       propertyPath: m_Name
       value: GamePackage
-      objectReference: {fileID: 0}
-    - target: {fileID: 1215587899222422203, guid: da1dc48eceaf78749936326612af42a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7800002
       objectReference: {fileID: 0}
     - target: {fileID: 1714212006266270082, guid: da1dc48eceaf78749936326612af42a4,
         type: 3}
       propertyPath: MahoPlayer
       value: 
       objectReference: {fileID: 944092316}
-    - target: {fileID: 1896034122287459666, guid: da1dc48eceaf78749936326612af42a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7800002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2931774226314227289, guid: da1dc48eceaf78749936326612af42a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5002276924690479363, guid: da1dc48eceaf78749936326612af42a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.62
-      objectReference: {fileID: 0}
     - target: {fileID: 9015564270211664573, guid: da1dc48eceaf78749936326612af42a4,
         type: 3}
       propertyPath: m_LocalPosition.x
