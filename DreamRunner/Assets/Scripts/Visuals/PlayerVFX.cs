@@ -26,10 +26,10 @@ public class PlayerVFX : MonoBehaviour
     // a function for checking player inputs **Ideally this would be connected the PlayerBehavior's inputs
     private void PlayerInputs()
     {
-        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForBackwards))
-            print("backwards missing VFX");//go left
-        if (Input.GetKeyUp(scrpt_PlyrBhvr.buttonForBackwards))
-            print("forwards missing vfx");//stop going left
+        //if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForBackwards))
+        //    print("backwards missing VFX");//go left
+        //if (Input.GetKeyUp(scrpt_PlyrBhvr.buttonForBackwards))
+        //    print("forwards missing vfx");//stop going left
 
         if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForJump))
             SpawnVFXPool(2);//jump

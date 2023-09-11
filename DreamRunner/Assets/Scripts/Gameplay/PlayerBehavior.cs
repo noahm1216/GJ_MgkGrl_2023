@@ -87,11 +87,12 @@ public class PlayerBehavior : MonoBehaviour
     [HideInInspector] public int jumpCount;
     [HideInInspector] public int dashCount;
     [HideInInspector] public bool isDashing;
+    [HideInInspector] public bool touchingGround;
     private float lastDashTimeStamp;
     private float dashingTime;
     private int layerGround; // ground layer mask
     private int layerObstacle; // obstacle layer mask
-    private bool touchingGround;
+    
 
 
 
