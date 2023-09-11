@@ -31,10 +31,10 @@ public class PlayerVFX : MonoBehaviour
         //if (Input.GetKeyUp(scrpt_PlyrBhvr.buttonForBackwards))
         //    print("forwards missing vfx");//stop going left
 
-        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForJump))
+        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForJump) && scrpt_PlyrBhvr.canMove)
             SpawnVFXPool(2);//jump
 
-        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForDash))
+        if (Input.GetKeyDown(scrpt_PlyrBhvr.buttonForDash) && scrpt_PlyrBhvr.canMove)
             SpawnVFXPool(3);//dash
 
     }

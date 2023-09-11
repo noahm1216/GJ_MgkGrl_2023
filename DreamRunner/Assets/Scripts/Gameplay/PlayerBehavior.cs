@@ -104,6 +104,9 @@ public class PlayerBehavior : MonoBehaviour
     private float dashTime, jumpTime = 0.05f;
 
 
+    //------------Functions
+
+
     private void Start()
     {
         jumpCount = jumpCountMax;
@@ -132,15 +135,15 @@ public class PlayerBehavior : MonoBehaviour
     // a function for checking player inputs
     private void PlayerInputs()
     {
-        if (Input.GetKeyDown(buttonForBackwards)) // backwards
+        if (Input.GetKeyDown(buttonForBackwards) && canMove) // backwards
             UpdateDirection(false);
-        if (Input.GetKeyUp(buttonForBackwards))
+        if (Input.GetKeyUp(buttonForBackwards) && canMove)
             UpdateDirection(true);
 
-        if (Input.GetKeyDown(buttonForJump)) //jump
+        if (Input.GetKeyDown(buttonForJump) && canMove) //jump
             AbilityJump();
 
-        if (Input.GetKeyDown(buttonForDash)) //dash
+        if (Input.GetKeyDown(buttonForDash) && canMove) //dash
             AbilityDash();
     }
 
@@ -149,6 +152,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (showDebug)
             print($"going right {_reverseDir}");
+
         facingRight = _reverseDir;
         if (facingRight)
             directionValue = 1;
@@ -184,7 +188,7 @@ public class PlayerBehavior : MonoBehaviour
     // a function for dash
     private void AbilityDash()
     {
-        if (dashCount <= 0)
+        if (dashCount <= 0 )
             return;
         lastDashTimeStamp = Time.time;
         rBody.AddForce((Vector3.right * directionValue) * speedDash);
@@ -213,6 +217,8 @@ public class PlayerBehavior : MonoBehaviour
         else
             isDashing = false;
     }//end of CheckDashing()
+
+
 
     //-------------------------------------------------COLLISIONS
 
