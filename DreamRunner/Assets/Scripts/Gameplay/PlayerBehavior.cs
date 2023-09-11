@@ -226,7 +226,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         GameObject rootObj = col.gameObject;
 
-        if (col.transform.name == "Collider")
+        if (col.transform.name.Contains("Collider"))
             rootObj = col.transform.parent.gameObject;
             
 
@@ -280,7 +280,7 @@ public class PlayerBehavior : MonoBehaviour
 
         GameObject rootObj = trig.gameObject;
 
-        if (trig.transform.name == "Collider")
+        if (trig.transform.name.Contains("Collider"))
             rootObj = trig.transform.parent.gameObject;
 
         if (rootObj.layer == layerObstacle) // obstacle

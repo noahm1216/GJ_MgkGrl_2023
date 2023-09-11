@@ -1,22 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Fade_material : MonoBehaviour {
 
-    public static bool fadeDark = false;
-    public static bool fadeLight = false;
+    public  bool fadeDark = false;
+    public  bool fadeLight = false;
 
-    [SerializeField] private bool loopFading = true;
-    [SerializeField] private float speedOffset = 1;
-    [SerializeField] private float waitOffset = 0.5f;
-
-    private Color currentColor;
+    public bool usesSpriteRenderer;
 
     void Start()
     {
+        if (fadeLight == true)
+        {
+            StartCoroutine(FadeTo(0.0f, 1.0f));
+            fadeLight = false;
+        }
 
-        //StartCoroutine(FadeTo(0.0f, 1.0f)); // when the game starts be at zero alpha
-        fadeLight = true;
+        if (fadeDark == true)
+        {
+            StartCoroutine(FadeTo(1.0f, 1.0f));
+            fadeDark = false;
+        }
     }
 
 
@@ -31,7 +36,7 @@ public class Fade_material : MonoBehaviour {
 
         if (fadeDark == true)
         {
-            StartCoroutine(FadeTo(1.0f, 0.0f));
+            StartCoroutine(FadeTo(1.0f, 1.0f));
             fadeDark = false;
         }
 
@@ -41,24 +46,33 @@ public class Fade_material : MonoBehaviour {
 
     IEnumerator FadeTo(float aValue, float aTime)
     {
-        
-        if(currentColor == null) currentColor = transform.GetComponent<SpriteRenderer>().material.color;
-        float alpha = currentColor.a;
-
-        yield return new WaitForSeconds(waitOffset);
-
-        for (float t = 0.0f; t < 1.0f; t += (Time.deltaTime / aTime) * speedOffset)
+        if (usesSpriteRenderer)
         {
-            Color newColor = new Color(currentColor.r, currentColor.g, currentColor.b, Mathf.Lerp(alpha, aValue, t));
+            float alpha = transform.GetComponent<SpriteRenderer>().material.color.a;
 
-            currentColor = newColor;
-            yield return null;
+            yield return new WaitForSeconds(0.5f);
+
+            for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+            {
+                Color newColor = new Color(0f, 0f, 0f, Mathf.Lerp(alpha, aValue, t));
+                transform.GetComponent<SpriteRenderer>().material.color = newColor;
+                yield return null;
+            }
         }
+        else
+        {
+            float alpha = transform.GetComponent<Image>().color.a;
 
-        if (alpha <= 0 && loopFading)
-            fadeLight = true;
-        if (alpha > 0.99f && loopFading)
-            fadeDark = true;
+            yield return new WaitForSeconds(0.5f);
+
+            for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+            {
+                Color newColor = new Color(0f, 0f, 0f, Mathf.Lerp(alpha, aValue, t));
+                transform.GetComponent<Image>().color = newColor;
+                yield return null;
+            }
+        }
+        
 
     }
 }

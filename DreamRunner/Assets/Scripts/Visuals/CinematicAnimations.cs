@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CinematicAnimations : MonoBehaviour
 {
@@ -16,10 +17,15 @@ public class CinematicAnimations : MonoBehaviour
     [Space]
     public Camera camAnim;
 
-    private bool gameStarted = false;
+    private bool gameStarted, gameEnded = false;
+
+    public static bool triggerGameOver = false;
 
     private void Start()
     {
+        //hide end screen
+        uiEndMenu.SetActive(false);
+
         //maho player invisible
         MahoPlayer.SetActive(false);
         //turn on animation cam
@@ -29,6 +35,20 @@ public class CinematicAnimations : MonoBehaviour
 
         //maho starter visible
         MahoStarter.SetActive(true);
+
+        //hide end screen
+        uiEndMenu.SetActive(false);
+
+        StartCoroutine(TurnOffUI_Bug());
+    }
+
+    public void Update()
+    {
+        if (triggerGameOver && !gameEnded)
+        {
+            gameEnded = true;
+            StartCoroutine(StartingGameAnimations(false));
+        }
     }
 
     public void ActivateGameFromMenu(bool _isStarting)
@@ -41,6 +61,22 @@ public class CinematicAnimations : MonoBehaviour
 
     }//end of StartGameFromMenu()
 
+
+    public void Restart_Reload()
+    {
+        //hide end screen
+        uiEndMenu.SetActive(false);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //hide end screen
+        uiEndMenu.SetActive(false);
+    }
+
+    private IEnumerator TurnOffUI_Bug()
+    {
+        yield return new WaitForSeconds(0.5f);
+        uiEndMenu.SetActive(false);
+    }
 
     private IEnumerator StartingGameAnimations(bool _startGame)
     {
@@ -72,6 +108,15 @@ public class CinematicAnimations : MonoBehaviour
         else // else finishing game
         {
             yield return new WaitForSeconds(0.15f);
+
+            //show end screen
+            uiEndMenu.SetActive(true);
+            //turn off player
+            MahoPlayer.SetActive(false);
+            //turn on animation cam
+            camAnim.gameObject.SetActive(true);
+
+
             //hid maho starter
             //hide maho player
 

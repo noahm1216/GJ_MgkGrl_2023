@@ -8,7 +8,7 @@ using UnityEngine;
 public class Obstacles : MonoBehaviour
 {   
 
-    public enum obstacleType { None, Book, Senpai, Pokki, LoveBox }
+    public enum obstacleType { None, Book, Senpai, Pokki, LoveBox, Endgame }
     [Space]
     [Header("Obstacle Tag \n __________")]
     [Space]
@@ -93,6 +93,9 @@ public class Obstacles : MonoBehaviour
                 if (_interactor.transform.GetComponent<PlayerBehavior>() != null)
                     _interactor.transform.GetComponent<PlayerBehavior>().ObstacleAnimationCall("Jumped");
                 break;
+            case obstacleType.Endgame:
+                CinematicAnimations.triggerGameOver = true;
+                break;
             default:
                 print($"{thisObsType} not accounted for yet");
                 break;
@@ -126,6 +129,9 @@ public class Obstacles : MonoBehaviour
                 //jump reaction
                 if (_interactor.transform.GetComponent<PlayerBehavior>() != null)
                     _interactor.transform.GetComponent<PlayerBehavior>().ObstacleAnimationCall("Jumped");
+                break;
+            case obstacleType.Endgame:
+                CinematicAnimations.triggerGameOver = true;
                 break;
             default:
                 print($"{thisObsType} not accounted for yet");
